@@ -1,0 +1,87 @@
+.navbar {
+  max-height: 80px;
+  padding: var(--spacing);
+  background-color: var(--color-light);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar > .navbar_links {
+  display: inherit;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+.navbar > .navbar_links > #logo {
+  --size: 32px;
+  display: block;
+  height: var(--size);
+}
+
+.navbar > .navbar_links > #logo > svg {
+  height: 100%;
+}
+
+.navbar > .navbar_links > .links {
+  --spacing: 8px;
+  display: inherit;
+  gap: var(--spacing);
+}
+
+.navbar > .navbar_links > .links *.active {
+  color: var(--color-primary);
+}
+
+.navbar > .navbar_account {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.navbar > .navbar_account > #account-button {
+  --spacing: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+.navbar > .navbar_account > #account-button > .avatar {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--color-light-grey);
+  border-radius: calc(var(--size) / 2);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar > .navbar_account > #account-button > .avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.navbar > .navbar_account > #account-button > .icon {
+  --color: var(--color-dark);
+  --size: 16px;
+  width: var(--size);
+  stroke: var(--color);
+}
+
+.navbar > .navbar_account > #account-button > .icon:hover {
+  --color: var(var(--color-primary));
+}

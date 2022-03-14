@@ -1,0 +1,12 @@
+{
+    "short_name": "Catalogo",
+    "name": "Avantio widgets catalogo",
+    "orientation": "landscape",
+    "developer": {
+      "name": "web team",
+      "url": "http://www.melonjs.org"
+    },
+    "start_url": "./index.html",
+    "display": "fullscreen",
+    "icons": []
+  }

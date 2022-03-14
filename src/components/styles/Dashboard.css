@@ -1,0 +1,127 @@
+#dashboard {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -ms-flex-preferred-size: 600px;
+  flex-basis: 600px;
+  background-color: var(--color-light);
+  border-radius: var(--corners);
+  z-index: 1;
+}
+#dashboard > * {
+  padding: var(--spacing);
+}
+
+.pagination {
+  --spacing: 8px;
+  display: inherit;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: var(--spacing);
+  white-space: nowrap;
+}
+
+.pagination > button {
+  --btn-size: 40px;
+  width: var(--btn-size);
+  height: var(--btn-size);
+  padding: unset;
+}
+
+.pagination > button > .icon {
+  --size: 24px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.pagination > hr {
+  width: 1px;
+  height: 100%;
+  background-color: var(--color-soft-light);
+}
+
+.pagination > .header_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--spacing);
+}
+
+.actions > #submit-widget {
+  --spacing: 16px;
+  gap: var(--spacing);
+}
+
+.body {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+#app main[data-sidenav="close"] .sidenav {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+#app main[data-sidenav="close"] .app-container {
+  margin-left: 0;
+}
+
+#app main[data-sidenav="close"] .app-container > .pagination button .icon {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.body .grid {
+  --minSize: 320px;
+}
+
+.collection-card .card-image {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding: var(--spacing);
+}
+
+.collection-card .card-image::before {
+  content: none;
+}
+
+.card-image:not(:hover) .btn,
+.card-image:not(:hover)::before {
+  opacity: 1;
+}
+
+.collection-card .edit-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  position: relative;
+  z-index: 10;
+}

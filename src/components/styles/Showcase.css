@@ -1,0 +1,68 @@
+#showcase {
+  display: inherit;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 4px;
+  height: 100%;
+}
+#showcase .wrapper {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -ms-flex-preferred-size: 600px;
+  flex-basis: 600px;
+  background-color: var(--color-light);
+  border-radius: var(--corners);
+  z-index: 1;
+  margin-left: auto;
+  height: 100%;
+}
+#showcase .wrapper > * {
+  padding: var(--spacing);
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header {
+  display: inherit;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header > .pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header > .pagination > hr {
+  height: 100%;
+}
+
+.header > .pagination .btn > .icon {
+  transform: rotate(90deg);
+}
+
+.body {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  overflow: scroll;
+  height: 100%;
+}
